@@ -11,6 +11,8 @@ The idea behind it was to make a full web app, with a frontend that just uses re
 
 With every football club avaible, using the [Football Data](https://www.football-data.org/) format in the database.
 
+Test the [deployed version](https://francogomez.github.io/crud-clubs-frontend/)
+
 ## Run Locally
 
 Clone the project
