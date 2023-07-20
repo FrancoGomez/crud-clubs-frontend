@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "cypress": "10.7",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "name": "crud-clubs-frontend",
+  "description": "Frontend for the crud clubs app",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoGomez/crud-clubs-frontend.git"
+  },
+  "author": "Franco Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancoGomez/crud-clubs-frontend/issues"
+  },
+  "homepage": "https://github.com/FrancoGomez/crud-clubs-frontend#readme"
+}
