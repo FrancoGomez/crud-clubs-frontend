@@ -1,7 +1,7 @@
-import { BACKEND_PORT } from '../../env.js';
+import { BACKEND_URL } from '../../env.js';
 
 export const returnAllClubs = async () => {
-  const clubsData = await fetch(`http://localhost:${BACKEND_PORT}/clubs`);
+  const clubsData = await fetch(`${BACKEND_URL}/clubs`);
 
   if (clubsData.status === 200) {
     return clubsData.json();
@@ -11,7 +11,7 @@ export const returnAllClubs = async () => {
 };
 
 export const returnClub = async (tla) => {
-  const clubData = await fetch(`http://localhost:${BACKEND_PORT}/clubs/${tla}`);
+  const clubData = await fetch(`${BACKEND_URL}/clubs/${tla}`);
 
   if (clubData.status === 200) {
     return clubData.json();
@@ -23,12 +23,12 @@ export const returnClub = async (tla) => {
 export const sendForm = (route, formId) => {
   const $form = document.querySelector(`#${formId}`);
 
-  fetch(`http://localhost:${BACKEND_PORT}/clubs/${route}`, {
+  fetch(`${BACKEND_URL}/clubs/${route}`, {
     method: 'post',
     body: new FormData($form),
   });
 };
 
 export const resetClubs = () => {
-  fetch(`http://localhost:${BACKEND_PORT}/clubs/backup`);
+  fetch(`${BACKEND_URL}/clubs/backup`);
 };
