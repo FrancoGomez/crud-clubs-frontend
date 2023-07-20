@@ -1,12 +1,12 @@
 /* eslint-disable no-restricted-globals */
-import { BACKEND_PORT } from '../../env.js';
+import { BACKEND_URL } from '../../env.js';
 
 export const redirect = (path) => {
   location.href = path;
 };
 
 export const deleteClub = async (tla) => {
-  await fetch(`http://localhost:${BACKEND_PORT}/${tla}`, {
+  await fetch(`${BACKEND_URL}/clubs/${tla}`, {
     method: 'delete',
   });
 };
@@ -66,7 +66,7 @@ export const validateInput = ($input) => {
 };
 
 export const sendForm = (clubTLA) => {
-  fetch(`http://localhost:${BACKEND_PORT}/clubs/${clubTLA || ''}`, {
+  fetch(`${BACKEND_URL}/clubs/${clubTLA || ''}`, {
     method: clubTLA ? 'put' : 'post',
     body: new FormData(document.querySelector('form')),
   });
