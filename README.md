@@ -38,28 +38,18 @@ Fill the env.js file with your own information, which must be at root level
 
   const BACKEND_URL =
 
-  const FRONT_PORT =
-
-  const FRONTEND_URL =
-
-  const GOOGLE_KEY =
-```
-
-**Optional** Fill the env-test.js file with your own information, which must be at root level too. This one is for cypress testing.
-
-```bash
-  const BACKEND_PORT =
-
-  const BACKEND_URL =
-
-  const FRONT_PORT =
-
-  const FRONTEND_URL =
-
   const GOOGLE_KEY =
 ```
 
 [Learn how to get a Google Key](https://developers.google.com/maps/documentation/embed/get-started)
+
+**Optional** Fill the env-test.js file with your own information, which must be at root level too. This one is for cypress testing.
+
+```bash
+  const FRONT_PORT =
+
+  const FRONTEND_URL =
+```
 
 And start a server, for which I was using a VSCode extension called Live Server.
 
